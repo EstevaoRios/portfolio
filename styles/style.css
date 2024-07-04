@@ -112,6 +112,14 @@ body {
     font-weight: 400;
 }
 
+.apresentacao__links__navegacao:hover{
+    background-color: aqua;
+}
+
+.cabecalho__menu__link:hover{
+    color: aqua;
+}
+
 @media (max-width: 1230px) {
 
     .cabecalho{
