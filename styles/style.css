@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root{
-    --cor-primaria: darkslateblue;
-    --cor-secundaria: turquoise;
+    --cor-primaria: linear-gradient(to top, #663399, #000);
+    --cor-secundaria: rgb(63, 214, 199);
     --cor-terciaria: gold;
     --cor-hover: #272727;
 
@@ -18,6 +18,8 @@
 body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
+    background-image: var(--cor-primaria);
+    background-size: cover;
     color: var(--cor-secundaria);
 }
 
@@ -36,6 +38,9 @@ body {
     font-weight: 400;
     color: var(--cor-terciaria);
     text-decoration: none;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 21.5px;
 }
 
 .apresentacao{
@@ -77,6 +82,7 @@ body {
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
+    color: gold;
 }
 .apresentacao__links__navegacao{
     display: flex;
@@ -98,7 +104,13 @@ body {
     background-color: var(--cor-hover);
 }
 
+.cabecalho__menu__link:hover{
+    background-color: rgba(0, 255, 255, 0.336);
+    color: aqua;
+}
+
 .apresentacao__imagem {
+    border-style: solid ;
     width: 50%;
 }
 
@@ -113,11 +125,13 @@ body {
 }
 
 .apresentacao__links__navegacao:hover{
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.336);
 }
 
-.cabecalho__menu__link:hover{
-    color: aqua;
+.apresentacao__conteudo__titulo__sobre__mim{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
 }
 
 @media (max-width: 1230px) {
